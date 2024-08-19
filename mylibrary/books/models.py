@@ -20,7 +20,7 @@ class Books(models.Model):
     genres = models.ManyToManyField(Genres)
 
     def __str__(self):
-        return "self.name", "self.author"
+        return self.name
 
     class Meta:
         ordering = ['name']
